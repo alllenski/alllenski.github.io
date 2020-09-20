@@ -1,0 +1,20 @@
+
+#gallery {
+    /* Prevent vertical gaps */
+    line-height: 1;
+    
+    -webkit-column-count: 3;
+    -webkit-column-gap:   3px;
+    -moz-column-count:    3;
+    -moz-column-gap:      3px;
+    column-count:         3;
+    column-gap:           3px;  
+}
+
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    width: 100% !important;
+    height: auto !important;
+}
