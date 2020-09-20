@@ -1,0 +1,87 @@
+
+html, body {
+    margin: 0;
+}
+
+@font-face {
+	font-family: FiraCode;
+	src: url("../fonts/FiraCode-Regular.ttf");
+}
+
+h1, p {
+    margin:0;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+p {
+    font-size: 32px;
+}
+
+ul {
+    margin-top: auto;
+    overflow: hidden;
+}
+  
+li {
+    font-family: FiraCode;
+    display: inline;
+    padding: 10px;
+    font-size: 32px;
+}
+
+
+ul a:visited {
+    color: white;
+}
+
+ul a:link {
+    color: white;
+    text-decoration: none;
+}
+
+ul a:hover {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+#content-header {
+    display: flex;
+    padding: 1% 5% 1% 5%;
+    justify-content: space-between;
+    flex-direction: row;
+	background: black;
+}
+
+#intro {
+    height: 10%;
+}
+
+#content {
+    padding: 10% 10% 0 10%;
+    font-family: FiraCode, Arial, Helvetica, sans-serif;
+}
+
+#logo {
+    background-image: url("../img/logo.png");
+    height: 90px;
+    width: 90px;
+}
+
+#logo:hover {
+    background-image: url("../img/logohover.png");
+}
