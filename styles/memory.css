@@ -1,0 +1,83 @@
+
+span {
+    font-size: 32px;
+}
+
+.flip-container.flipped .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    width: 320px;
+    height: 250px;
+}
+
+
+/* flip speed */
+
+.flipper {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+
+/* hide back of pane during swap */
+
+.front,
+.back {
+    box-shadow: 5px 5px black; 
+    border-radius: 25px;
+    backface-visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+/* front pane, placed above back */
+
+.front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color: lightblue;
+    color: black;
+}
+
+
+/* back, initially hidden pane */
+
+.back {
+    transform: rotateY(180deg);
+    background-color: beige;
+}
+
+#correct {
+    background-color: lightseagreen;
+    padding: 15px 32px;
+    box-shadow: 5px 5px black; 
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#wrong {
+    background-color: coral;
+    padding: 15px 32px;
+    box-shadow: 5px 5px black; 
+    border-radius: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

@@ -8,6 +8,12 @@ html, body {
 	src: url("../fonts/FiraCode-Regular.ttf");
 }
 
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
 h1, p {
     margin:0;
 }
@@ -77,11 +83,13 @@ a:hover {
 }
 
 #logo {
-    background-image: url("../img/logo.png");
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
     height: 90px;
     width: 90px;
-}
-
-#logo:hover {
-    background-image: url("../img/logohover.png");
+    background: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 600%;
+    
 }
