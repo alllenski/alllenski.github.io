@@ -8,6 +8,10 @@ html, body {
 	src: url("../fonts/FiraCode-Regular.ttf");
 }
 
+body {
+    display: none;
+}
+
 img {
     image-rendering: pixelated;
     image-rendering: -moz-crisp-edges;
