@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
    
-    $('#content-header').load("common/navbar.md");
+    $('#content-header').load("../common/navbar.md");
 
     $("body").show();
 

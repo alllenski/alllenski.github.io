@@ -6,13 +6,14 @@
         <meta name="author" content="Allenski">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="styles/gallery.css">
+        <link rel="stylesheet" type="text/css" href="../styles/main.css">
+        <link rel="stylesheet" type="text/css" href="../styles/gallery.css">
 
         <title>Allenski</title>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/jquery.js"></script>
+        <script src="js/gallery.js"></script>
 
     </head>
     <body>
@@ -22,27 +23,83 @@
         </div>
 
         <div id="content">
-            <div id="gallery">
-                <img src="img/gallery/agentapple.png">
-                <img src="img/gallery/chess.png">
-                <img src="img/gallery/relics.png">
-                <img src="img/gallery/rose.png">
-                <img src="img/gallery/panda.png">
-                <img src="img/gallery/skull.png">
-                <img src="img/gallery/minotaurs.png">
-                <img src="img/gallery/monsters.png">
-                <img src="img/gallery/orc.png">
-                <img src="img/gallery/thehog.png">
-                <img src="img/gallery/bloody.png">
-                <img src="img/gallery/dungeon.png">
-                <img src="img/gallery/foodstuff.png">
-                <img src="img/gallery/orcs.png">
-                <img src="img/gallery/villagers.png">
-                <img src="img/gallery/portraits.png">
-                <img src="img/gallery/eye.png">
-                <img src="img/gallery/twoorc.png">
+            <h1>Games</h1>
+            <div class="gallery">
+                <a href="works/unsolved-business.html"><img src="img/gallery/games/unsolved.gif" alt="Unsolved Business"></a>
+                <a href="https://allenski.itch.io/eyes-on-the-dice"><img src="img/gallery/games/eyes_on_the_dice.gif" alt="Eyes on the Dice"></a>
+                <a href="https://the-jamsam.itch.io/kokabiel"><img src="img/gallery/games/kokabiel.gif"></a>
+                <a href="https://the-jamsam.itch.io/botrush"><img src="img/gallery/games/botrush_cropped.gif"></a>
+                <a href="https://globalgamejam.org/2021/games/founders-keepers-6"><img src="img/gallery/games/founders_keepers.gif"></a>
+                <a href="https://gene-normandia.itch.io/unbound"><img src="img/gallery/games/unbound.gif"></a>
+                <a href="https://the-jamsam.itch.io/kokabiel"><img src="img/gallery/games/twisted_arcade_cropped.gif"></a>
+                <a href="https://the-jamsam.itch.io/kokabiel"><img src="img/gallery/games/jonesnew.gif"></a>
+                <a href="https://the-jamsam.itch.io/kokabiel"><img src="img/gallery/games/jonesold.gif"></a>
+            </div>
+            <h1>Game Mockups</h1>
+            <div class="gallery withbox">
+                <img src="img/gallery/mockups/cuterpg.gif">
+                <img src="img/gallery/mockups/dungeon.png">
+                <img src="img/gallery/mockups/metroidfusion.png">
+                <img src="img/gallery/mockups/robovania.png"">
+                <img src="img/gallery/mockups/screenbattler.png">
+                <img src="img/gallery/mockups/spaceship.png">
+                <img src="img/gallery/mockups/townbuilder.png">
+                <img src="img/gallery/mockups/twinstick.gif">
+            </div>
+            <h1>Pixel Art</h1>
+            <div class="gallery withbox">
+                <img src="img/gallery/art/agentapple.png" alt="Agent">
+                <img src="img/gallery/art/bloody.png" alt="Bloody Chess">
+                <img src="img/gallery/art/chess.png" alt="Relics">
+                <img src="img/gallery/art/diamond.png">
+                <img src="img/gallery/art/eye.png">
+                <img src="img/gallery/art/food.png">
+                <img src="img/gallery/art/foodstuff.png">
+                <img src="img/gallery/art/frogknight.png">
+                <img src="img/gallery/art/health potion.png">
+                <img src="img/gallery/art/heart.gif">
+                <img src="img/gallery/art/madman.png">
+                <img src="img/gallery/art/mine.gif">
+                <img src="img/gallery/art/minotaurs.png">
+                <img src="img/gallery/art/monsters.png">
+                <img src="img/gallery/art/monsters2.png">
+                <img src="img/gallery/art/monsters3.png">
+                <img src="img/gallery/art/monsters4.png">
+                <img src="img/gallery/art/new.png">
+                <img src="img/gallery/art/orc.png">
+                <img src="img/gallery/art/orcs.png">
+                <img src="img/gallery/art/panda.png">
+                <img src="img/gallery/art/portraits.png">
+                <img src="img/gallery/art/reimu.png">
+                <img src="img/gallery/art/relics.png">
+                <img src="img/gallery/art/roles.png">
+                <img src="img/gallery/art/rose.png">
+                <img src="img/gallery/art/rpgset.png">
+                <img src="img/gallery/art/samus.gif">
+                <img src="img/gallery/art/sheet.png">
+                <img src="img/gallery/art/skull.png">
+                <img src="img/gallery/art/skull_large.gif">
+                <img src="img/gallery/art/slime.png">
+                <img src="img/gallery/art/thehog.png">
+                <img src="img/gallery/art/twoorc.png">
+                <img src="img/gallery/art/villagers.png">
+                <img src="img/gallery/art/watercolorapple.png">
+                <img src="img/gallery/art/wizardidle.gif">
+                <img src="img/gallery/art/wizardidle1bit.gif">
+                <img src="img/gallery/art/hamemotes.png">
+                <img src="img/gallery/art/portrait1.png">
             </div>
         </div>
+        <div id="lightBox" class="lightBox">
+            <span class="close cursor" onclick="closeLightBox()">&times;</span>
+            <div class="lightBox-content">
 
+                <img id="lightBox-image">
+
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
