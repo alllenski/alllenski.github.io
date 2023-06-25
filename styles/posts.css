@@ -8,21 +8,27 @@ h1 {
     margin-left: auto;
     margin-right: auto;
     align-content: center;
+    line-height: 1.5;
 }
 
 #content img{
-    width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    border-radius: 32px;
+    width: 80%;
+    object-fit: contain;
+   
+}
+
+.media {
+    text-align: center;
+    margin: 24px 24px 0px 24px;
+    overflow: hidden;
 }
 
 .caption {
     font-size: 16px;
-    color: gray;
+    color: #266368;
     text-align: center;
+    margin-top: 0px;
     margin-bottom: 2%;
 }
 
@@ -36,4 +42,21 @@ h1 {
     display: block;
     margin: 2%;
     font-size: 16px;
+}
+
+@media screen and (max-width: 80rem) {
+    
+    #content {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        align-content: center;
+        line-height: 1.35;
+    }
+    
+    #content img{
+        border-radius: 32px;
+        width: 100%;
+    }
+
 }
