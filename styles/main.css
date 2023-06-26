@@ -16,10 +16,31 @@ html, body {
 	src: url("../fonts/FiraCode-Regular.ttf");
 }
 
+@font-face {
+	font-family: Match7h;
+	src: url("../fonts/Match/Match\ Basic\ 7h.ttf");
+}
+
+@font-face {
+	font-family: Match7p;
+	src: url("../fonts/Match/Match\ Basic\ 7p.ttf");
+}
+
+@font-face {
+	font-family: Match8h;
+	src: url("../fonts/Match/Match\ Basic\ 8h.ttf");
+}
+
+@font-face {
+	font-family: Match8p;
+	src: url("../fonts/Match/Match\ Basic\ 8p.ttf");
+}
+
 body {
     background-color: var(--background-color);
     color: white;
     display: none;
+    font-family: FiraCode;
 }
 
 img {
@@ -35,19 +56,22 @@ h1 {
 
 p {
     font-size: calc(1rem + 0.25vw);
+    line-height: 1.5;
 }
 
-ul {
+#content-header ul {
     margin-top: auto;
 }
   
 li {
-    font-family: FiraCode;
     display: inline;
     padding: 10px;
-    font-size: calc(1.5rem + 0.25vw);
+    font-size: calc(1.25rem + 0.25vw);
 }
 
+li a {
+    text-decoration: none;
+}
 
 a:visited {
     color: var(--primary);
@@ -55,13 +79,22 @@ a:visited {
 
 a:link {
     color: var(--primary);
-    text-decoration: none;
 }
 
 a:hover {
     color: white;
 }
 
+.media {
+    text-align: center;
+    margin: 24px 24px 0px 24px;
+    overflow: hidden;
+}
+
+#content {
+    padding: 10%;
+    font-family: FiraCode, Arial, Helvetica, sans-serif;
+}
 
 #content-header {
     display: flex;
@@ -71,13 +104,42 @@ a:hover {
 	background: var(--accent-color);
 }
 
-#intro {
-    height: 10%;
+#content-footer {
+    display: flex;
+    padding: 2% 5% 2% 5%;
+    flex-flow: row wrap;
+	background: var(--accent-color);
 }
 
-#content {
-    padding: 10%;
-    font-family: FiraCode, Arial, Helvetica, sans-serif;
+
+#content-footer * {
+    margin: auto;
+    align-self: center;
+    font-size: calc(0.75rem + 0.2vw);
+}
+
+#icons {
+    margin: 4vh auto auto auto;
+    flex: 1 100%;
+    display: flex;
+    justify-content: center;
+    font-size: calc(0.75rem + 0.2vw);
+    text-decoration-color: #a5ffba;
+    text-decoration: underline;
+    padding: 0;
+}
+
+#icons * {
+    margin: 0;
+    width: 48px;
+}
+
+#icons img {
+    filter: invert(87%) sepia(38%) saturate(403%) hue-rotate(68deg) brightness(103%) contrast(102%);
+}
+
+#icons img:hover {
+    filter: brightness(0) invert(1);
 }
 
 #logo {
@@ -98,9 +160,18 @@ a:hover {
         
     }
 
-    ul {
-        margin-top: 16px;
+    p {
+        line-height: 1.35;
+    }
+
+    #content-header ul {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
         padding-left: 0px;
+    }
+    
+    #content-footer * {
+        padding: 2vw;
     }
 
     #logo {

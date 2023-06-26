@@ -2,6 +2,7 @@
 $(document).ready(function(){
    
     $('#content-header').load("../common/navbar.md");
+    $('#content-footer').load("../common/footer.md");
 
     $("body").show();
 

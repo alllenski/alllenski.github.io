@@ -1,0 +1,18 @@
+Hey! I'm glad you're trying one of my fonts~♥️
+You can get the premium version with extended character support on:
+
+https://somepx.itch.io/pixel-font-match
+
+-------------------------------------------------------------------
+
+CONSTRUCT 3 - SpriteFont parameters
+
+Character width: 16
+
+Character height: 16
+
+Character set: 
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!"'+-=*%_()
+
+Spacing data:
+[[3," "],[7,"VWw"],[6,"ABDGHKMNOPQRTUXYZabdeghmnopquvxy*_"],[5,"CEFLScfkrsz023456789\"%"],[4,"Iit1?+-=()"],[3,"Jjl,;'"],[2,".:!"]]
