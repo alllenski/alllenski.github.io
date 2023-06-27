@@ -91,6 +91,14 @@ a:hover {
     overflow: hidden;
 }
 
+.caption {
+    font-size: 16px;
+    color: #266368;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 2%;
+}
+
 #content {
     padding: 10%;
     font-family: FiraCode, Arial, Helvetica, sans-serif;
