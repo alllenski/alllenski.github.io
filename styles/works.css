@@ -71,3 +71,12 @@
 h1, p {
     display: inline;
 }
+
+@media screen and (max-width: 80rem) {
+    
+    .gallery img {
+        margin: 16px auto;
+        border-radius: 16px;
+    }
+
+}
