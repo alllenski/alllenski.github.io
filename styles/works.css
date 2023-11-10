@@ -72,6 +72,65 @@
     color: white;
 }
 
+
+/* Game Section */
+
+.games {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 4em;
+
+}
+
+.game-entry {
+    width: 100%;
+    margin-bottom: 4em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.game-entry img {
+    margin: 8px;
+    max-width: 100%;
+    height: 32vh; 
+    border-radius: 32px;
+    object-fit: cover;
+    vertical-align: text-bottom;
+}
+
+.game-entry img:hover {
+    cursor: pointer;
+    filter: contrast(80%);
+
+}
+
+#details {
+    padding: 2%;
+    width: 50%;
+    border-radius: 32px;
+    background-color: var(--accent-color);
+}
+
+#details h2 {
+    margin: 0%;
+}
+
+#details .label {
+    font-size: 16px;
+    line-height: 3;
+    color: var(--primary-2);
+}
+
+#details .value{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+
 #caption {
     font-family: FiraCode, Arial, Helvetica, sans-serif;
 }

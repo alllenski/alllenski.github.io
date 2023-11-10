@@ -49,6 +49,15 @@ h1 {
     color: var(--primary);
 }
 
+.media {
+    overflow: visible;
+}
+
+video  {
+    width: 100%;
+    height: auto;
+}
+
 @media screen and (max-width: 80rem) {
     
     #content {
