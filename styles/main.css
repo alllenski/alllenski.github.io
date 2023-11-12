@@ -4,6 +4,7 @@
     --accent-color: #0e1838;
     --primary: #a5ffba;
     --primary-2: #5db39a;
+    --button: #edff89;
 
 }
 
@@ -74,11 +75,11 @@ li a {
 }
 
 a:visited {
-    color: var(--primary);
+    color: var(--button);
 }
 
 a:link {
-    color: var(--primary);
+    color: var(---button);
 }
 
 a:hover {
