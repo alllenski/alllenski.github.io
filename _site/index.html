@@ -2,52 +2,89 @@
 <html>
     <head>
         
-        <title>Allenski</title>
+        <title>Alllenski</title>
         
         <meta charset="UTF-8">
-        <meta name="author" content="Allenski">
+        <meta name="author" content="Alllenski">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
-        <link rel="stylesheet" type="text/css" href="styles/index.css">
-        
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="stylesheet" href="/public/css/index.css">
+        <script src="/public/js/header.js"></script>
 
+        <link rel="icon" type="image/png" sizes="16x16" href="/public/icons/favicon.png">
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="js/jquery.js"></script>
+        
         
     </head>
     <body>
 
         <header id="content-header">
-
+            <a id="logo" href="../index.html"><img src="/public/img/MiniLogo.png"/></a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/work">Work</a></li>
+                <li><a href="/about">About</a></li>
+            </ul>
         </header>
-
-        <div id="content">
-            <div id="intro">
-                <img id="avatar" src="img/CatGreenSquare.png"></img>
-                <h1>Hey!</h1>
-                <p>I'm Allen. <br> I'm a game developer! I mainly do programming and pixel art. <br>
-                    Take a look at some of the <a href="../works.html">projects</a> I've worked on!<br>
-                    Welcome to my site!</p><br>
-                <p>I'm currently working on...</p>
-            </div>
-            <div class="spacer"></div>
-            <div class="showcase">
-                <div class="media">
-                    <video src="img/gallery/showcase/PaleBluePeek.mp4" muted autoplay loop></video>
+        <main id="content">
+            
+<div id="intro">
+    
+    <h1>Hey!</h1>
+    <p>I'm <b>Allen</b>, I create video games and other tidbits. Welcome to my site!</p>
+    <img id="avatar" src="public/img/CatGreenSquare.png"></img>
+</div>
+<section>
+    <h2>About</h2>
+    <p>
+        I'm Allen!<br><br>
+        There isn't much to say except my main focus is <b>indie game development</b>. I love to create <b>interactive experiences</b> whether through games, livestreams, websites,
+        real life, or through anything at all :D<br><br>
+        I'm probably working on my <a href="">main project</a> or if not, probably one of the many <a href="">other projects</a> I have.
+    </p>
+</section>
+<section>
+    <h2>What I'm currently working on</h2>
+    <div class="media">
+        <video src="public/videos/PaleBluePixel.mp4" muted autoplay loop></video>
+    </div>
+    <p class="caption">Hunting for rats</p>
+    <br>
+    <p>
+        A point and click adventure game set in a dreamy universe where you control a pair of investigators in their cases to uncover the dark reality that awaits them.
+    </p>
+    <br>
+    <a href="">Read more-></a>
+</section>
+        </main>
+        
+        <footer>
+            <img class="footer-decor" src="/public/img/RatBurger.gif">
+            <div id="content-footer">
+                © 2024 alllenski
+                <div class="footer-column">
+                    Site->
+                    <a href="/">Home</a>
+                    <a href="/blog">Blog</a>
+                    <a href="/works">Works</a>
+                    <a href="/about">About</a>
                 </div>
-                <h1>Pale Blue Pixel</h1>
-                <p>
-                    Discover the secrets of the hotel at the end of the universe and go on a dreamy adventure to escape the burdens of reality.
-                </p>
+                
+                <div class="footer-column">
+                    Outside->
+                    <a href="https://www.twitter.com/alllenski" target="_blank">Twitter</a>
+                    <a href="https://vgen.co/alllenski" target="_blank">VGen</a>
+                    <a href="https://alllenski.itch.io" target="_blank">Itch.io</a>
+                    <a href="https://ko-fi.com/alllenski" target="_blank">Ko-Fi</a>
+                    
+                </div>
+                <div class="footer-column">
+                    <a id="logo" href="#top"><img src="/public/img/MiniLogo.png"/></a>
+                </div>
             </div>
-        </div>
-        <div class="spacer"></div>
-
-        <footer id="content-footer">
             
         </footer>
 
