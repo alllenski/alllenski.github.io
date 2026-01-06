@@ -1,7 +1,8 @@
 ---
 
 layout: layout.html
-
+eleventyImport:
+    collections: ["game", "blog", "other"]
 ---
 
 <script src="/public/js/work.js"></script>
@@ -13,10 +14,65 @@ layout: layout.html
     <p>Take a look at some of my pixel art, game dev, and other work!</p>
 </div>
 <section>
+    <h2>Games</h2>
+    <div class="posts">
+        {% for game in collections.game reversed %}
+            <div class="entry">
+                <img src="{{ game.data.image-path }}" alt="{{ game.data.title }}">
+                <div class="details">
+                    
+                    <h2>{{ game.data.title }}</h2>
+                    <span class="label">status</span>
+                    <span class="value"">{{ game.data.status }}</span>
+                    <br>
+                    <span class="label">role</span>
+                    <span class="value">{{ game.data.role }}</span>
+                    <br>
+                    <p>{{ game.data.description }}</p>
+                    <br>
+                    <br>
+                    {%- if game.data.outside-url -%}
+                        <a href="{{ game.data.outside-url }}" target="_blank">Play here -></a>
+                    {%- else -%}
+                        <a href="{{ game.url }}">Read more -></a>
+                    {%- endif -%}
+                    
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>
+<section>
     <h2>Pixel Art</h2>
     <div class="gallery withbox">
         {% for image in collections.art %}
             <img src="{{ image.data.path }}" alt="{{ image.data.name }}"/>
+        {% endfor %}
+    </div>
+</section>
+<section>
+    <h2>Other</h2>
+    <div class="posts">
+        {% for post in collections.other reversed %}
+            <div class="entry">
+            {%- if game.data.image-path -%}
+                <img src="{{ post.data.image-path }}" alt="{{ post.data.title }}">
+            {%- endif -%}
+            <div class="details">
+                
+                <h2>{{ post.data.title }}</h2>
+                <br>
+                <p>{{ post.data.description }}</p>
+                <br>
+                <br>
+                {%- if post.data.outside-url -%}
+                    <a href="{{ post.data.outside-url }}" target="_blank">Let's go! -></a>
+                {%- else -%}
+                    <a href="{{ post.url }}">Read more -></a>
+                {%- endif -%}
+                
+            </div>
+        </div>
         {% endfor %}
     </div>
 </section>

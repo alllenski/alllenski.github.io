@@ -5,25 +5,30 @@
     --accent-color: #1d304a;
     --primary: #a5ffba;
     --primary-2: #5db39a;
+    --secondary: #116b87;
     --button: #edff89;
-
+    --border-radius: 0px;
 }
 
 html, body {
     margin: 0;
 }
 
-@font-face {
-	font-family: FiraCode;
-	src: url("../fonts/FiraCode-VF.ttf");
-}
+
+.source-code-pro-normal {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 
 body {
     background-color: var(--background-color);
     color: white;
-    font-family: FiraCode;
+    font-family: "Source Code Pro", monospace;
 }
+
 
 img {
     image-rendering: pixelated;
@@ -36,10 +41,14 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: calc(1rem + 1vw);
+}
+
 p {
     font-size: calc(1rem + 0.25vw);
     line-height: 1.5;
-    margin: 0;
+    font-weight: 400;
 }
   
 li {
@@ -53,7 +62,7 @@ li a {
 }
 
 b {
-    font-weight: 700;
+    font-weight: 900;
 }
 
 a:visited {
@@ -71,19 +80,37 @@ a:hover {
 section {
     justify-content: center;
     align-items: center;
-    height: 800px
+    height: 100%
 }
 
 section a {
     font-size: calc(1rem + 0.25vw);
 }
 
-.media {
-    border-radius: 25px;
+section img {
+    width: 100%; 
     overflow: hidden;
     z-index: 1;
     box-shadow: 10px 10px var(--dark-color);
 }
+
+.media {
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 10px 10px var(--dark-color);
+}
+
+.smaller {
+    display: block;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.media img {
+    width: 100%;
+}
+
 
 .media video {
     z-index: -1;
@@ -93,6 +120,14 @@ section a {
     height: 100%;
     object-fit: cover;
 }
+
+
+.secondary {
+    color: var(--primary-2);
+    text-shadow: 2px 2px var(--dark-color);
+    font-weight: bold;
+}
+
 
 .caption {
     font-size: 16px;
@@ -116,8 +151,8 @@ section a {
 
 #content {
     margin: auto;
-    font-family: FiraCode, Arial, Helvetica, sans-serif;
     width: 100%;
+    height: 100%;
     max-width: 900px;
     font-size: 16px;
     letter-spacing: 0.02em;
@@ -135,7 +170,7 @@ section a {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    border-radius: 10px;
+    border-radius: var(--border-radius);
     background: var(--accent-color);
     max-width: 900px;
     box-shadow: 10px 10px var(--dark-color);

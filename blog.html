@@ -4,15 +4,17 @@ layout: layout.html
 
 ---
 
+<link rel="stylesheet" href="/public/css/blog.css"></link>
+
 <div id="intro">
     <h1>Blog!</h1>
     <p>Ramblings about game development and anything really :D</p>
 </div>
 <section>
     <h2>Read on!</h2>
-    <ul>
-        {%- for post in collections.post -%}
-            <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    <ul id="entries-list">
+        {%- for post in collections.blog -%}
+            <li><a href="{{ post.url }}">{{ post.data.title }}</a></li><br><br>
         {%- endfor -%}
     </ul>
 </section>

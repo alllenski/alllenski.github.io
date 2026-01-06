@@ -16,7 +16,7 @@ section {
 .gallery img {
     margin: 8px;
     width: 30%;
-    border-radius: 32px;
+    border-radius: var(--border-radius);
     object-fit: cover;
     vertical-align: text-bottom;
 }
@@ -53,7 +53,7 @@ section {
     display: block;
     width: auto;
     height: 80%;
-    border-radius: 32px;
+    border-radius: var(--border-radius);
 }
 
 .close {
@@ -81,7 +81,7 @@ section {
 
 /* Game Section */
 
-.games {
+#posts {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -89,8 +89,8 @@ section {
 
 }
 
-.game-entry {
-    width: 100%;
+.entry {
+    width: 95%;
     margin-bottom: 4em;
     display: flex;
     flex-direction: row;
@@ -98,47 +98,47 @@ section {
 
 }
 
-.game-entry img {
-    margin: 8px;
-    max-width: 100%;
-    height: 32vh; 
-    border-radius: 32px;
+.entry img {
+    width: 320px;
+    height: 320px;
+    border-radius: var(--border-radius);
     object-fit: cover;
     vertical-align: text-bottom;
+    box-shadow: 10px 10px var(--dark-color);
 }
 
-.game-entry img:hover {
-    cursor: pointer;
-    filter: contrast(80%);
-
-}
-
-#details {
-    padding: 2%;
+.details {
+    padding: 4%;
     width: 50%;
-    border-radius: 32px;
+    border-radius: var(--border-radius);
     background-color: var(--accent-color);
+    box-shadow: 10px 10px var(--dark-color);
 }
 
-#details h2 {
+.details h2 {
     margin: 0%;
 }
 
-#details .label {
+.details .label {
     font-size: 16px;
-    line-height: 3;
+    line-height: 2;
     color: var(--primary-2);
 }
 
-#details .value{
+.details .value{
     font-size: 16px;
     font-weight: bold;
     color: var(--primary);
 }
 
 
-#caption {
-    font-family: FiraCode, Arial, Helvetica, sans-serif;
+.details p, .details a {
+    font-size: 16px;
+}
+
+.button {
+    background-color: var(--secondary);
+    color: var(--primary)
 }
 
 h1, p {
@@ -166,4 +166,8 @@ h1, p {
         width: 100%;
     }
 
+}
+
+.hidden {
+    display: none;
 }

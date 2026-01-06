@@ -22,8 +22,6 @@ function closeLightBox() {
 
 var slideIndex = 1;
 
-
-
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
@@ -34,3 +32,9 @@ function showSlides(elem) {
     image.src = elem.src;
     text.innerHTML = elem.alt;
 }
+
+function toggleSection(_id) {
+    var section = document.getElementById(_id);
+    section.classList.toggle("hidden");
+}
+
